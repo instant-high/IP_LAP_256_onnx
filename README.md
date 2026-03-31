@@ -12,7 +12,10 @@ Code mainly based on https://github.com/langzizhixin/IP_LAP_256
   * ONNX facemask model
 
   Tested on windows (cpu and cuda - nvidia rtx3060)  
-  This is just a POC
+  This is just a POC  
+    
+  Usage:  
+  python inference_256.py --input "video.mp4" --audio "audio.wav" --output "result.mp4"
   
 
 
