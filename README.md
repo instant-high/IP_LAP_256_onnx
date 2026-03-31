@@ -13,6 +13,8 @@ Code mainly based on https://github.com/langzizhixin/IP_LAP_256
 
   Tested on windows (cpu and cuda - nvidia rtx3060)  
   This is just a POC  
+
+  Python 3.10
     
   Usage:  
   python inference_256.py --input "video.mp4" --audio "audio.wav" --output "result.mp4"
