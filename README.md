@@ -14,11 +14,14 @@ Code mainly based on https://github.com/langzizhixin/IP_LAP_256
   Tested on windows (cpu and cuda - nvidia rtx3060)  
   This is just a POC  
 
-  Python 3.1  
-  CPU inference is quite slow, so nvidia GPU recommended
-    
-  Demo:  
-  python inference_256.py --input "video.mp4" --audio "audio.wav" --output "result.mp4"
+  Python 3.10    
+  FFmpeg required  
+
+  Download all models from releases to /onnx_models
+  
+  Run inference:  
+  python inference_256.py --input "video.mp4" --audio "audio.wav" --output "result.mp4"  
+  (CPU inference is quite slow, so nvidia GPU recommended)
   
 
 
