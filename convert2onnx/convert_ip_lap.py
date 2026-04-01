@@ -301,7 +301,7 @@ def export_renderer(checkpoint_path, output_path, N_ref=25):
 				output_names=['generated_face','wrapped_ref'],
 				dynamic_axes={
 					'face_frame_img': {2: 'N_face'},
-					'ref_N_frame_img': {2: 'N_ref'},
+					'ref_N_frame_img': {1: 'N_ref'},
 					'ref_N_frame_sketch': {1: 'N_ref'},
 					'target_sketches': {1: 'T_sketch'},
 					'generated_face': {1: 'T_output'},
