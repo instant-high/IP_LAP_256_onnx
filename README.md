@@ -7,7 +7,7 @@ Code mainly based on https://github.com/langzizhixin/IP_LAP_256
     New onnx models available for testing:  
     Nref_25.onnx .... Nref_3.onnx (4 x faster inference, lower quality)  
       Changed inference code, ...Nref_3 onnx as default.  
-      You have to set ref_img_N = 25 manually in the script to try the ...Nref_25 model
+      You have to set eg. ref_img_N = 25 manually in the script to try the ...Nref_25 model
     
 
   Changes:
