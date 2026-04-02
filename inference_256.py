@@ -34,7 +34,7 @@ parser.add_argument('--audio', type=str, default='audio.wav')
 parser.add_argument('--output', type=str, default='./result.mp4') 
 #parser.add_argument('--static', type=bool, help='whether only use  the first frame for inference', default=False)
 parser.add_argument('--landmark_gen_checkpoint_path', type=str, default='onnx_models/ip_lap_landmark_generator.onnx')
-parser.add_argument('--renderer_checkpoint_path', type=str, default='onnx_models/ip_lap_renderer.onnx')
+parser.add_argument('--renderer_checkpoint_path', type=str, default='onnx_models/ip_lap_renderer_Nref_3.onnx')
 args = parser.parse_args()
 
 landmark_gen_checkpoint_path = args.landmark_gen_checkpoint_path
@@ -43,7 +43,8 @@ input_video_path = args.input
 input_audio_path = args.audio
 outfile_path = args.output
     
-ref_img_N = 25
+ref_img_N = 3
+# ref_img_N = 25 
 Nl = 15
 T = 5
 mel_step_size = 16
