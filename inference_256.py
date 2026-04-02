@@ -370,10 +370,10 @@ for frame_idx, full_frame in enumerate(ori_background_frames):
         y_min = min(y_min, y)
         y_max = max(y_max, y)
 
-    x_min = max(x_min - plus_pixel / 256, 0)
+    x_min = max(x_min - plus_pixel + 1/ 256, 0)
     x_max = min(x_max + plus_pixel + 2 / 256, 1)  # + 2
-    y_min = max(y_min - plus_pixel / 256, 0)
-    y_max = min(y_max + plus_pixel + 1 / 256, 1)  # + 1 .... add chin
+    y_min = max(y_min - plus_pixel + 1 / 256, 0)
+    y_max = min(y_max + plus_pixel + 3 / 256, 1)  # + 1 .... add chin
     
     y1, y2 = int(y_min * h), int(y_max * h)
     x1, x2 = int(x_min * w), int(x_max * w)
