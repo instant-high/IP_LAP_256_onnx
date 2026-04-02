@@ -2,6 +2,14 @@
 IP_LAP: Identity-Preserving Talking Face Generation with Landmark and Appearance Priors - ONNX implementation  
 Code mainly based on https://github.com/langzizhixin/IP_LAP_256  
 
+  Update April 02. 2026:  
+    Changed onnx conversion back to fixed input shapes (dynamic not working without modifying original model)  
+    Two new onnx models available for testing:  
+    ...Nref_25.onnx and ...Nref_3.onnx (4 x faster inference)  
+      Changed inference code, ...Nref_3 onnx as default.  
+      You have to set ref_img_N = 25 manually in the script to try the ...Nref_25 model
+    
+
   Changes:
 
   * Removed torch dependencies
